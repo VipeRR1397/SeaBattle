@@ -15,7 +15,7 @@
     ///////////////////////////////// Statistic \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
     const play = {
-        record: 0,
+        record: localStorage.getItem('sbRecord') || 0,
         hits: 0,
         shots: 0,
         kills: 0,
@@ -41,6 +41,10 @@
                 hits: ['', '', '', '']
             },
             {
+                location: ['95','96','97'],
+                hits: ['', '', '']
+            },
+            {
                 location: ['30','40','50'],
                 hits: ['', '', '']
             },
@@ -49,12 +53,32 @@
                 hits: ['', '']
             },
             {
+                location: ['58', '59'],
+                hits: ['', '']
+            },
+            {
+                location: ['78', '77'],
+                hits: ['', '']
+            },
+            {
                 location: ['99'],
+                hits: ['']
+            },
+            {
+                location: ['90'],
+                hits: ['']
+            },
+            {
+                location: ['44'],
+                hits: ['']
+            },
+            {
+                location: ['37'],
                 hits: ['']
             }
         ],
     
-        shipCount: 4,
+        shipCount: 10,
     };
 
 ///////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -119,7 +143,8 @@
 
 const init = () => {
     enemyField.addEventListener('click', fire);
-    
+    play.render();
+
     again.addEventListener('click', () => {
         location.reload();
     });
