@@ -11,7 +11,7 @@ main {
     flex-direction: column;
 }
 
-.board {
+.main {
     margin: 10px;
 }
 
@@ -41,16 +41,31 @@ ul {
   justify-content: space-between;
 }
 
-.shots {
+.hits {
     background-image: url('img/fire.svg'); 
 }
 
 
-.misses {
+.shots {
     background-image: url('img/cross.svg'); 
     background-size: 20px;
 }
 
 .kills {
     background-image: url('img/skull.svg'); 
+}
+
+.again {
+
+    margin-top: 20px;
+    background-color: bisque;
+    width: 355px;
+    height: 25px;
+}
+
+.again:hover {
+    opacity: 82%;
+}
+.again:active{
+    background-color: chartreuse;
 }
