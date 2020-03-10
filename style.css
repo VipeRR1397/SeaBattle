@@ -14,7 +14,11 @@ main {
 }
 
 .main {
-    margin: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 table {
@@ -52,6 +56,11 @@ ul {
   justify-content: space-between;
 }
 
+.u_ship {
+    background-color: brown;
+}
+
+
 .hits {
     background-image: url('img/fire.svg'); 
 }
@@ -70,7 +79,7 @@ ul {
 
     margin-top: 20px;
     background-color: rgb(35, 88, 95);
-    width: 355px;
+    width: 1150px;
     height: 25px;
     color: white;
 }
